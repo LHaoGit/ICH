@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>非遗之光——非遗传承</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+  }
+  h1.title {
+    font-size: 2.5em; /* 增大标题字体大小 */
+    color: #333; /* 标题颜色 */
+    margin: 0;
+  }
+  p.description {
+    font-family: 'Times New Roman', serif; /* 复古字体 */
+    font-size: 1.2em; /* 介绍文段字体大小 */
+    text-align: center;
+    max-width: 600px;
+    margin: 10px auto 30px; /* 添加底部外边距 */
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+  }
+  .grid-item, .video-item {
+    position: relative;
+    overflow: hidden;
+  }
+  .grid-item img, .video-item video {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+  }
+  .grid-item:hover img, .video-item:hover video {
+    transform: scale(1.2);
+  }
+  .video-item {
+    grid-column: span 2; /* 视频占据两个网格项 */
+    grid-row: span 2; /* 视频占据两行 */
+  }
+  .description {
+    text-align: center;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1 class="title">非遗之光——非遗传承</h1>
+  <p class="description">在古老与现代的交界有一门艺术，它不止点燃了夜空，更照亮了文化的深度。打铁花，一向传承千年的非遗绝技。</p>
+  <p class="description">铁花绽放夜空明，炽热瞬间映心灵。匠心独运巧手舞，璀璨夺目似流星。</p>
+  <p class="description">传承千年技艺精，打铁声声响不停。美轮美奂传佳话，人间奇景留芳名。</p>
+</header>
+
+<div class="grid-container">
+  <!-- 图片展示 -->
+  <div class="grid-item">
+    <img src="pictrue01.jpg" alt="图片1">
+  </div>
+  <div class="grid-item">
+    <img src="pictrue02.jpg" alt="图片2">
+  </div>
+  <div class="grid-item">
+    <img src="pictrue03.jpg" alt="图片2">
+  </div>
+  <div class="grid-item">
+    <img src="pictrue04.jpg" alt="图片2">
+  </div>
+
+  <!-- ... 其他图片 -->
+
+  <!-- 视频播放部分 -->
+  <div class="video-item">
+    <video controls width="100%" height="auto">
+      <source src="video.mp4" type="video/mp4">
+      您的浏览器不支持视频标签。
+    </video>
+  </div>
+  <div class="grid-item">
+    <img src="pictrue.jpg" alt="图片2">
+  </div>
+  <!-- ... 继续添加图片 -->
+</div>
+
+<div class="description">
+  <p>感谢您的访问，希望您享受这些图片和视频，感受非遗文化的魅力。</p>
+</div>
+
+</body>
+</html>
